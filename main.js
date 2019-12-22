@@ -12,5 +12,8 @@ ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 function play() {
     board.reset();
-    console.table(board.grid);
+    let piece = new Piece(ctx)
+    piece.draw();
+    
+    board.piece = piece;
 }
